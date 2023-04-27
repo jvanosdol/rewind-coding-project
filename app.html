@@ -61,7 +61,7 @@
                     <h1 class="display-5 fw-bold lh-1 mb-3">
                         REWIND: A coding project
                     </h1>
-                    <h4 class="lead">
+                    <h4 class="lead pb-3">
                         There and backagain. A javascript coding exercise that gathers a user's string input and then reverses it and displays it on the page.
                     </h4>
                 </div>
@@ -72,7 +72,7 @@
                             <input id="userString" type="text" class="form-control" placeholder="Enter a string" aria-label="Enter a string">
                         </div>
                         <div class="col-12">
-                            <button type="button" id="btnSubmit" class="btn btn-danger"></button>
+                            <button type="button" id="btnSubmit" class="btn btn-danger">Reverse Me</button>
                         </div>
                         <div class="alert alert-danger mt-5 invisible fade show" id="alert" role="alert" >
                             <h4 class="alert-heading">Well Done</h4>
@@ -126,7 +126,11 @@
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
     </script>
 
-    <script src="js.site.js"></script>
+    <script src="js/site.js"></script>
+
+    <script>
+        document.getElementById('btnSubmit').addEventListener('click', getValue)
+    </script>
 
 </body>
 
